@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="32.0" prefWidth="600.0" text="CALCULATOR">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="masuk_angka" alignment="CENTER_RIGHT" layoutX="113.0" layoutY="-8.0" prefHeight="33.0" prefWidth="111.0" promptText="MASUKKAN ANGKA">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Label fx:id="hasil" alignment="CENTER" layoutX="114.0" layoutY="-137.0" prefHeight="85.0" prefWidth="347.0" style="-fx-border-color: black; -fx-background-color: yellow;" text="0" textAlignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="masuk_angka2" alignment="CENTER_RIGHT" layoutX="348.0" layoutY="-8.0" prefHeight="33.0" prefWidth="111.0" promptText="MASUKKAN ANGKA">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="button_kali" layoutX="113.0" layoutY="26.0" mnemonicParsing="false" onAction="#buttonKali" prefHeight="34.0" prefWidth="111.0" text="X" />
+            <Button fx:id="button_clear" layoutX="113.0" layoutY="134.0" mnemonicParsing="false" onAction="#buttonClear" prefHeight="44.0" prefWidth="346.0" text="CLEAR" />
+            <Button fx:id="button_kurang" layoutX="113.0" layoutY="83.0" mnemonicParsing="false" onAction="#buttonKurang" prefHeight="34.0" prefWidth="111.0" text="-" />
+            <Button fx:id="button_bagi" layoutX="348.0" layoutY="26.0" mnemonicParsing="false" onAction="#buttonBagi" prefHeight="34.0" prefWidth="111.0" text="/" />
+            <Button fx:id="button_tambah" layoutX="348.0" layoutY="83.0" mnemonicParsing="false" onAction="#buttonTambah" prefHeight="34.0" prefWidth="111.0" text="+" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
